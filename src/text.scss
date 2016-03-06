@@ -1,0 +1,28 @@
+// Text helpers
+
+$align-positions: (
+  left,
+  center,
+  right
+);
+
+// Text alignment
+@each $position in $align-positions {
+  .text-#{$position} {
+    text-align: $position;
+  }
+}
+
+
+$font-styles: (
+  bold,
+  italic,
+  normal,
+);
+// Font-styles
+@each $style in $font-styles {
+  .text-#{$style} {
+    font-style: $style;
+  }
+}
+
